@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_city"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_margin="5dp"
+        android:backgroundTint="#0020D0"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/item_city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gaza"
+            android:lines="1"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:maxLength="80"
+            android:gravity="center"
+            android:autoSizeMaxTextSize="15sp"
+            android:textColor="@color/white"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/item_city_Image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"/>
+            <ImageView
+                android:id="@+id/item_city_favorit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/favorit"
+                />
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
